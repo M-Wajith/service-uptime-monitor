@@ -85,7 +85,7 @@ done
 | ![empty\_logs\_directory](screenshots/empty_logs_directory.png)                         | Before stopping any service – `logs/` is empty         |
 | ![manual\_service\_stop\_view\_status](screenshots/manual_service_stop_view_status.png) | Manually stopped `apache2` to simulate service failure |
 | ![script\_check\_services](screenshots/script_check_services.png)                       | Script that logs downtime and restarts services        |
-| ![set\_cronjob](screenshots/set_cronjob.png)                                            | Cron job created to run script every 1 minute          |
+| ![set\_cronjob](screenshots/set_cronjob.png)                                            | Cron job created to run script every 10 minute          |
 | ![view\_cronjob](screenshots/view_cronjob.png)                                          | View of created cron job using `crontab -l`            |
 | ![log\_file\_created](screenshots/log_file_created.png)                                 | Log file created after service went down               |
 | ![view\_log\_file](screenshots/view_log_file.png)                                       | Viewing log file that contains downtime record         |
@@ -95,7 +95,7 @@ done
 
 ## Cron Job Setup
 
-To run the script every 1 minute:
+To run the script every 10 minute:
 
 ```bash
 crontab -e
